@@ -38,13 +38,32 @@ Project home [here](https://dvla.jcadima.dev)
 ---
 
 ## Quick Start
-
+```
 git clone https://github.com/jcadima/dvla
 cd dvla
-docker compose up -d
 
-# App runs at http://localhost:8084
+# Copy the example environment file, the APP_KEY is intentionally hardcoded
+# in .env.example and is required for several lab vulnerabilities to work
+cp .env.example .env
 
+docker compose up -d --build
+```
+Install PHP dependencies and set up the database (run inside the app container):
+```
+docker compose exec dvla-admin composer install
+docker compose exec dvla-admin php artisan migrate --seed
+```
+Install front-end dependencies and build assets (run on your host machine, Node is not in the containers):
+```
+npm install
+npm run build
+```
+Use `npm run dev` instead of `npm run build` if you want Vite's dev server with hot reload while working through the exercises.
+
+# App runs at 
+```
+http://localhost:8084
+```
 
 ---
 
@@ -78,26 +97,39 @@ docker compose up -d
 
 ## Project Structure
 
+```
 dvla/
-  docker-compose/
-    nginx/
-    mysql/
-  app/
-  database/
-    migrations/
-    seeders/
-  Dockerfile
-  docker-compose.yml
-  .env.example
-  README.md
+├── app/                  # Laravel application code (Models, Http, etc.)
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── docker-compose/
+│   ├── nginx/
+│   └── mysql/
+├── public/
+├── resources/
+├── routes/
+├── storage/
+├── tests/
+├── artisan
+├── composer.json
+├── docker-compose.yml
+├── Dockerfile
+├── .env.example
+├── package.json
+└── README.md
+```
 
 ---
 
 ## Resetting the Lab
-
+```
 docker compose down -v
-docker compose up -d
-
+docker compose up -d --build
+docker compose exec dvla-admin php artisan migrate --seed
+```
 This wipes all data and starts clean. Useful between exercises.
 
 ---
