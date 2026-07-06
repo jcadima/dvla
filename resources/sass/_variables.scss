@@ -1,0 +1,57 @@
+// Body
+$body-bg: #f8fafc;
+
+// CUSTOM Typography
+// $font-family-sans-serif: 'SegoeUI', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+$border-radius: 0.7rem;
+
+
+// CUSTOM STYLES
+$pagination-active-bg: #00aef4;
+$data-bs-theme:  #00aef4;
+$bs-link-color-rgb : rgb(0 174 244) ;
+$primary: #009bff;
+$secondary: #6f3695;
+
+
+// Change link color Globally, backend and frontend
+$link-color: #00aef4; // Custom link color based on logo light blue color
+$link-hover-color: darken($link-color, 10%); // Optional: Custom hover color
+
+// Define the CSS custom property for the link color RGB
+:root {
+    --bs-btn-hover-bg: #000; // Replace with your desired color
+    --bs-link-color-rgb: 0, 174, 244; // Corresponds to the RGB values of #00aef4
+}
+
+
+// Override Bootstrap's primary color
+$primary: #3b486b;
+$warning-hover: darken($primary, 6%);
+$warning-contrast: #fff;
+
+// Set success color to Desaturated Jade
+$success: #4f7262;
+$warning-hover: darken($success, 6%);
+$warning-contrast: #fff;
+
+// Warning color override
+$warning: #c49b08;
+$warning-hover: darken($warning, 6%);
+$warning-contrast: #fff;
+
+// Info color override
+$info: #5a7184;
+$info-hover: darken($info, 5%);
+$info-contrast: #fff;
+
+// Danger background
+$danger: #933b4b;
+$danger-hover: darken($danger, 5%);
+$danger-contrast: #fff;
+
+
+// Links 
+$link-color: $primary;

@@ -1,0 +1,104 @@
+services:
+  dvla-admin:
+    build:
+      args:
+        user: root        # INTENTIONAL: runs as root — RCE = full container control
+        uid: 0
+      context: ./
+      dockerfile: Dockerfile
+      network: host        # sandbox build-network workaround, no runtime effect
+    container_name: dvla-admin
+    restart: unless-stopped
+    working_dir: /var/www/
+    environment:
+      # INTENTIONAL: secrets hardcoded here and also in .env — committed to git history
+      APP_KEY: base64:mJjSMd3892ZHO43QS7TJJj7VTs9P0+9IyWZ9+r/shwk=
+      DB_PASSWORD: secret123
+    volumes:
+      - ./:/var/www
+      - /var/run/docker.sock:/var/run/docker.sock  # INTENTIONAL: container escape vector
+    networks:
+      - dvla-net
+    depends_on:
+      dvla-db:
+        condition: service_healthy
+
+  dvla-nginx:
+    image: nginx:1.17-alpine     # INTENTIONAL: outdated image with known CVEs
+    container_name: dvla-nginx
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:8084:80"       # INTENTIONAL: explicit wildcard bind
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d
+    networks:
+      - dvla-net
+    depends_on:
+      dvla-admin:
+        condition: service_started
+
+  dvla-db:
+    image: mysql:8-oracle
+    container_name: dvla-db
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "0.0.0.0:3306:3306"     # INTENTIONAL: exposed on all interfaces
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_PASSWORD}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    networks:
+      - dvla-net
+
+  dvla-redis:
+    image: redis:7-alpine
+    container_name: dvla-redis
+    restart: unless-stopped
+    # INTENTIONAL: no --requirepass, no --bind 127.0.0.1 — anything that
+    # reaches dvla-net can connect without a password.
+    # No host port mapping: app containers reach Redis over the internal
+    # dvla-net network only (hostname dvla-redis:6379), never from the host.
+    networks:
+      - dvla-net
+
+  dvla-horizon:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      network: host        # sandbox build-network workaround, no runtime effect
+    container_name: dvla-horizon
+    restart: unless-stopped
+    working_dir: /var/www/
+    command: php artisan horizon
+    volumes:
+      - ./:/var/www
+      - /var/run/docker.sock:/var/run/docker.sock  # INTENTIONAL: worker also has socket (lateral move)
+    networks:
+      - dvla-net
+    depends_on:
+      dvla-redis:
+        condition: service_started
+      dvla-db:
+        condition: service_healthy
+
+volumes:
+  mysql-data:
+
+networks:
+  dvla-net:
+    driver: bridge
+    # INTENTIONAL: no internal: true, no subnet isolation between app/db/queue tiers

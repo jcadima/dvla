@@ -1,0 +1,32 @@
+// ============================================================
+// Frontend — Public Page Layout
+// ============================================================
+
+// Main content wrapper (accounts for fixed navbar height)
+.wrapper {
+    margin-top: 96px;
+}
+
+// Page content padding
+.page-content {
+    padding: 75px 0;
+}
+
+// Scroll-to-top button
+.top-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.top {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 30px;
+    background: #00b1fa;
+    border-radius: 50%;
+    white-space: nowrap;
+}

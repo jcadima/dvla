@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" width="360" height="100">
+  <!-- Transparent background -->
+
+  <!-- Shield shape - minimalist -->
+  <path
+    d="M 18 14 L 72 14 L 72 62 Q 72 86 45 95 Q 18 86 18 62 Z"
+    fill="none"
+    stroke="#e05a4e"
+    stroke-width="2.5"
+  />
+  <!-- Shield fill - very light tint -->
+  <path
+    d="M 18 14 L 72 14 L 72 62 Q 72 86 45 95 Q 18 86 18 62 Z"
+    fill="#e05a4e"
+    opacity="0.07"
+  />
+
+  <!-- D lettermark inside shield -->
+  <text
+    x="45"
+    y="68"
+    font-family="'Helvetica Neue', Arial, sans-serif"
+    font-size="52"
+    font-weight="800"
+    text-anchor="middle"
+    fill="#e05a4e"
+    letter-spacing="-2"
+  >D</text>
+
+  <!-- Vertical divider -->
+  <line x1="96" y1="16" x2="96" y2="84" stroke="#2d3748" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- DVLA wordmark -->
+  <text
+    x="116"
+    y="54"
+    font-family="'Helvetica Neue', Arial, sans-serif"
+    font-size="36"
+    font-weight="700"
+    letter-spacing="4"
+    fill="#2d3748"
+  >DVLA</text>
+
+  <!-- Coral underline accent under DVLA -->
+  <line x1="116" y1="62" x2="270" y2="62" stroke="#e05a4e" stroke-width="2" stroke-linecap="round"/>
+</svg>

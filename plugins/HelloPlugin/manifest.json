@@ -1,0 +1,7 @@
+{
+  "name": "Hello Plugin",
+  "slug": "hello-plugin",
+  "description": "Displays a hello message in the admin dashboard.",
+  "version": "1.0.0",
+  "author": "JCDev"
+} 

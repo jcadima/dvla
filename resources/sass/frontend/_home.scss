@@ -1,0 +1,596 @@
+// ============================================================
+// DVLA — Frontend dark theme
+// Imported at end of app.scss so it loads after Bootstrap.
+// ============================================================
+
+// ---------- Body (scoped to frontend layout only) ----------
+body.dvla-frontend {
+    background-color: #0d1117;
+}
+
+// ---------- Logo ----------
+.dvla-nav-logo {
+    height: 38px;
+    width: auto;
+}
+
+.dvla-login-logo {
+    height: 56px;
+    width: auto;
+}
+
+// ---------- Navbar ----------
+.navbar-background {
+    background-color: #0d1117;
+    border-bottom: 1px solid #21262d;
+}
+
+.dvla-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.dvla-brand-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e74c3c;
+    letter-spacing: 0.04em;
+    font-family: 'Courier New', monospace;
+}
+
+.dvla-brand-sub {
+    font-size: 0.6rem;
+    color: #6e7681;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #c9d1d9;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+
+    &:hover {
+        color: #e74c3c;
+    }
+}
+
+.nav-login-link {
+    color: #e74c3c !important;
+    border: 1px solid #e74c3c;
+    border-radius: 4px;
+    padding: 6px 14px !important;
+    transition: background 0.2s;
+
+    &:hover {
+        background: #e74c3c !important;
+        color: #fff !important;
+    }
+}
+
+// ---------- Hero ----------
+.dvla-hero {
+    background: linear-gradient(135deg, #0d1117 0%, #161b22 60%, #0d1117 100%);
+    padding: 70px 0 60px;
+    border-bottom: 1px solid #21262d;
+}
+
+.dvla-hero-warning {
+    display: inline-block;
+    background: rgba(210, 153, 34, 0.15);
+    color: #d29922;
+    border: 1px solid rgba(210, 153, 34, 0.4);
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 5px 16px;
+    letter-spacing: 0.04em;
+    margin-bottom: 28px;
+}
+
+.dvla-hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #e6edf3;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+}
+
+.dvla-hero-subtitle {
+    font-size: 1.05rem;
+    color: #8b949e;
+    line-height: 1.7;
+    max-width: 680px;
+    margin: 0 auto 36px;
+}
+
+.dvla-hero-ctas {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dvla-btn-primary {
+    background: #e74c3c;
+    color: #fff;
+    border: 1px solid #e74c3c;
+    padding: 12px 28px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: background 0.2s, transform 0.1s;
+
+    &:hover {
+        background: #c0392b;
+        border-color: #c0392b;
+        color: #fff;
+        transform: translateY(-1px);
+    }
+}
+
+.dvla-btn-ghost {
+    background: transparent;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    padding: 12px 28px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: border-color 0.2s, color 0.2s, transform 0.1s;
+
+    &:hover {
+        border-color: #8b949e;
+        color: #e6edf3;
+        transform: translateY(-1px);
+    }
+}
+
+// ---------- Shared Section ----------
+.dvla-section {
+    padding: 70px 0;
+}
+
+.dvla-section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e6edf3;
+    margin-bottom: 10px;
+}
+
+.dvla-section-sub {
+    color: #8b949e;
+    font-size: 0.95rem;
+    max-width: 620px;
+    margin: 0 auto 10px;
+    line-height: 1.65;
+}
+
+// ---------- Why DVLA ----------
+.dvla-why {
+    background: #0d1117;
+}
+
+.dvla-why-card {
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 8px;
+    padding: 28px 24px;
+    transition: border-color 0.2s, transform 0.2s;
+
+    &:hover {
+        border-color: #e74c3c;
+        transform: translateY(-2px);
+    }
+
+    h5 {
+        color: #e6edf3;
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    p {
+        color: #8b949e;
+        font-size: 0.88rem;
+        line-height: 1.65;
+        margin: 0;
+    }
+
+    code {
+        color: #e74c3c;
+        background: rgba(231, 76, 60, 0.1);
+        padding: 1px 5px;
+        border-radius: 3px;
+        font-size: 0.82rem;
+    }
+}
+
+.dvla-why-icon {
+    font-size: 1.6rem;
+    color: #e74c3c;
+    margin-bottom: 14px;
+}
+
+// ---------- Kill Chain ----------
+.dvla-killchain {
+    background: #161b22;
+    border-top: 1px solid #21262d;
+    border-bottom: 1px solid #21262d;
+}
+
+.dvla-chain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 32px;
+}
+
+.dvla-chain-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #0d1117;
+    border: 1px solid #21262d;
+    border-radius: 8px;
+    padding: 14px 18px;
+    min-width: 155px;
+    flex: 0 0 auto;
+
+    strong {
+        color: #e6edf3;
+        font-size: 0.9rem;
+        display: block;
+    }
+
+    small {
+        color: #8b949e;
+        font-size: 0.75rem;
+    }
+
+    code {
+        color: #e74c3c;
+        background: rgba(231, 76, 60, 0.1);
+        padding: 1px 4px;
+        border-radius: 3px;
+        font-size: 0.72rem;
+    }
+}
+
+.dvla-chain-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.dvla-chain-arrow {
+    color: #30363d;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+// ---------- Vulnerability Modules ----------
+.dvla-modules {
+    background: #0d1117;
+}
+
+.dvla-tier-header {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.dvla-tier-easy {
+    background: rgba(35, 197, 94, 0.15);
+    color: #23c55e;
+    border: 1px solid rgba(35, 197, 94, 0.35);
+}
+
+.dvla-tier-medium {
+    background: rgba(210, 153, 34, 0.15);
+    color: #d29922;
+    border: 1px solid rgba(210, 153, 34, 0.35);
+}
+
+.dvla-tier-hard {
+    background: rgba(231, 76, 60, 0.15);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.35);
+}
+
+.dvla-module-card {
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    transition: transform 0.15s, border-color 0.15s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    h6 {
+        color: #e6edf3;
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    p {
+        color: #8b949e;
+        font-size: 0.83rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    code {
+        color: #e74c3c;
+        background: rgba(231, 76, 60, 0.1);
+        padding: 1px 4px;
+        border-radius: 3px;
+        font-size: 0.78rem;
+    }
+}
+
+.dvla-module-easy  { border-left: 3px solid #23c55e; }
+.dvla-module-medium { border-left: 3px solid #d29922; }
+.dvla-module-hard  { border-left: 3px solid #e74c3c; }
+
+.dvla-read-more {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #8b949e;
+    text-decoration: none;
+    transition: color 0.15s;
+
+    &:hover {
+        color: #e74c3c;
+    }
+}
+
+// ---------- Blog Series ----------
+.dvla-blog {
+    background: #161b22;
+    border-top: 1px solid #21262d;
+}
+
+.dvla-blog-card {
+    display: flex;
+    gap: 16px;
+    background: #0d1117;
+    border: 1px solid #21262d;
+    border-radius: 8px;
+    padding: 18px;
+    height: 100%;
+    transition: border-color 0.15s, transform 0.15s;
+
+    &:hover {
+        border-color: #30363d;
+        transform: translateY(-2px);
+    }
+
+    p {
+        color: #c9d1d9;
+        font-size: 0.85rem;
+        line-height: 1.55;
+        margin-bottom: 8px;
+    }
+}
+
+.dvla-blog-num {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+    background: #21262d;
+    color: #8b949e;
+    font-size: 0.78rem;
+    font-weight: 700;
+    border-radius: 4px;
+    padding-top: 4px;
+}
+
+// ---------- Subfooter ----------
+.subfooter {
+    background: #0d1117;
+    border-top: 1px solid #21262d;
+    padding: 20px 0;
+
+    p {
+        color: #484f58;
+        font-size: 0.78rem;
+    }
+}
+
+// ---------- Login Page ----------
+body.dvla-login {
+    background-color: #0d1117;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dvla-login-wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+.dvla-login-card {
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+.dvla-login-brand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dvla-login-badge {
+    display: block;
+    text-align: center;
+    background: rgba(210, 153, 34, 0.12);
+    color: #d29922;
+    border: 1px solid rgba(210, 153, 34, 0.35);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 5px 14px;
+    letter-spacing: 0.03em;
+    margin: 0 auto 24px;
+    width: fit-content;
+}
+
+.dvla-login-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e6edf3;
+    margin-bottom: 6px;
+}
+
+.dvla-login-sub {
+    color: #6e7681;
+    font-size: 0.88rem;
+    margin-bottom: 28px;
+}
+
+.dvla-form-group {
+    margin-bottom: 20px;
+}
+
+.dvla-form-label {
+    display: block;
+    color: #8b949e;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    letter-spacing: 0.03em;
+}
+
+.dvla-form-input {
+    width: 100%;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #e6edf3;
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    outline: none;
+
+    &::placeholder {
+        color: #484f58;
+    }
+
+    &:focus {
+        border-color: #e74c3c;
+        box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15);
+        background: #0d1117;
+        color: #e6edf3;
+    }
+
+    &.is-invalid {
+        border-color: #e74c3c;
+    }
+}
+
+.dvla-form-error {
+    display: block;
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.dvla-login-btn {
+    width: 100%;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 11px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+
+    &:hover {
+        background: #c0392b;
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+.dvla-login-footer-note {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-size: 0.82rem;
+
+    a {
+        color: #6e7681;
+        text-decoration: none;
+        transition: color 0.15s;
+
+        &:hover {
+            color: #c9d1d9;
+        }
+    }
+}
+
+// ---------- Responsive ----------
+@media (max-width: 768px) {
+    .dvla-hero-title {
+        font-size: 1.9rem;
+    }
+
+    .dvla-hero {
+        padding: 50px 0 40px;
+    }
+
+    .dvla-chain {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dvla-chain-arrow {
+        transform: rotate(90deg);
+        padding-left: 20px;
+    }
+}

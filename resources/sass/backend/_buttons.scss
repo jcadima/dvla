@@ -1,0 +1,70 @@
+.btn .badge {
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.btn .badge.bg-transparent {
+    background-color: hsla(0, 0%, 100%, .25) !important;
+    color: #fff;
+}
+.btn i,
+.btn svg,
+.btn.icon svg {
+    width: 16px;
+    height: 16px;
+}
+.btn.icon {
+    padding: .4rem .6rem;
+}
+.btn.icon.icon-left svg {
+    margin-right: 3px;
+}
+.btn.icon.icon-right svg {
+    margin-left: 3px;
+}
+.btn.btn-outline-white {
+    color: #fff;
+    border-color: #fff;
+}
+.btn.btn-outline-white:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+.btn.btn-danger,
+.btn.btn-dark,
+.btn.btn-info,
+.btn.btn-primary,
+.btn.btn-secondary,
+.btn.btn-success,
+.btn.btn-warning,
+.card .card-img-overlay .card-title,
+.dropdown-toggle:after,
+.modal .white,
+.sidebar-wrapper .menu .sidebar-item.active .sidebar-link span {
+    color: #fff;
+}
+.btn.btn-light {
+    color: #607080;
+}
+
+.btn-block {
+    width: 100%;
+}
+.btn-group:not(.dropdown) .btn:not([class*=btn-]) {
+    border: 1px solid #dfe3e7;
+}
+.btn-group > .btn {
+    border-radius: .267rem;
+}
+.buttons .btn {
+    margin: 0 10px 10px 0;
+}
+
+.breadcrumb.breadcrumb-right {
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+.breadcrumb.breadcrumb-center {
+    justify-content: center;
+    margin-top: 1rem;
+}

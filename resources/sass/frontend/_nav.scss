@@ -1,0 +1,72 @@
+// ============================================================
+// Frontend — Public Navbar
+// ============================================================
+
+.navbar .navbar-brand img {
+    height: 3.5rem;
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+    .nav-custom-ul li {
+        word-wrap: normal;
+        word-break: auto-phrase;
+        font-size: 13px;
+        margin-right: 1rem !important;
+    }
+}
+
+// Mobile: collapse drops absolutely below the navbar so the logo never moves
+@media (max-width: 991.98px) {
+    .navbar-background .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #0d1117;
+        border-top: 1px solid #21262d;
+        border-bottom: 1px solid #21262d;
+        padding: 0.5rem 1.5rem 1rem;
+        z-index: 999;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-background .navbar-collapse .nav-link {
+        padding: 0.65rem 0;
+        border-bottom: 1px solid rgba(33, 38, 45, 0.7);
+    }
+
+    .navbar-background .navbar-collapse .nav-item:last-child .nav-link {
+        border-bottom: none;
+    }
+}
+
+#dropdownMenuButton {
+    color: #009bff;
+}
+
+// Mobile offcanvas menu
+.offcanvas .fa-close {
+    font-size: 1.8rem;
+}
+.offcanvas.show .row {
+    padding-top: 2rem !important;
+}
+.offcanvas.show .nav-link {
+    color: black;
+}
+
+// Social media icon circles
+.icon-wrapper {
+    border: 2px solid #00b1fa;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    margin-top: 10px;
+}
+
+.icon-wrapper i {
+    color: #fff;
+    font-size: 25px;
+}

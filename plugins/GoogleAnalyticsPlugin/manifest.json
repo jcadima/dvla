@@ -1,0 +1,7 @@
+{
+  "name": "Google Analytics Plugin",
+  "slug": "google-analytics-plugin",
+  "description": "Allows admin to add a Google Analytics tracking code to the site.",
+  "version": "1.0.0",
+  "author": "JCDev"
+} 

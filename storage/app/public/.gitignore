@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# Allow the .gitignore file
+!.gitignore
+
+# Allow specific directories
+!posts/
+!pages/
+!fonts/
+!images/
+!videos/
+
+# Allow all files inside these directories
+!posts/**
+!pages/**
+!fonts/**
+!images/**
+!videos/**

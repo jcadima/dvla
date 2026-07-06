@@ -1,0 +1,26 @@
+// ============== CUSTOM Fonts ========================
+@font-face {
+    font-family: "Sarpanch-Regular";
+    src: url("#{$base-url}/fonts/Sarpanch-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// ========== FRONTEND STYLES ==========
+@import "frontend/index";
+
+// ========== BACKEND / ADMIN STYLES ==========
+@import "backend/index";
+
+body {
+}
+
+a {
+    text-decoration: none;
+}

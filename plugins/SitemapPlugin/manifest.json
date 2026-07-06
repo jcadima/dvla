@@ -1,0 +1,7 @@
+{
+  "name": "Sitemap Plugin",
+  "slug": "sitemap-plugin",
+  "description": "Provides a dynamic XML sitemap at /sitemap.xml for posts and pages.",
+  "version": "1.0.0",
+  "author": "JCDev"
+} 

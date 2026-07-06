@@ -1,0 +1,224 @@
+.form-group {
+    margin-bottom: .7rem;
+}
+.form-group[class*=has-icon-] .form-control-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 .6rem;
+}
+.form-group label {
+    color: rgba(35, 28, 99, .7);
+    font-weight: 600;
+}
+.form-group[class*=has-icon-].has-icon-left .form-control-icon {
+    left: 0;
+}
+.form-check.form-check-sm label,
+.form-group small {
+    font-size: .7rem;
+}
+.form-group.with-title,
+.card .card-content,
+.sidebar-wrapper .menu .submenu .submenu-item.active {
+    position: relative;
+}
+.form-group.with-title label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    font-size: .6rem;
+    background-color: #e9ecef;
+    width: 100%;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form-group.with-title .form-control,
+.form-group.with-title .dataTable-input {
+    padding-top: 2rem;
+}
+.form-group.with-title .form-control:focus ~ label,
+.form-group.with-title .dataTable-input:focus ~ label {
+    border-left: 1px solid #435ebe;
+    border-top: 1px solid #435ebe;
+    border-right: 1px solid #435ebe;
+}
+.form-group[class*=has-icon-].has-icon-left .form-control {
+    padding-left: 2.5rem;
+}
+.form-group[class*=has-icon-].has-icon-right .form-control {
+    padding-right: 2.5rem;
+}
+.form-group[class*=has-icon-].has-icon-right .form-control-icon {
+    right: 0;
+}
+.form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon i,
+.form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon svg {
+    color: #5a8dee;
+}
+.form-group[class*=has-icon-] .form-control.form-control-xl {
+    padding-left: 3rem;
+}
+.form-group[class*=has-icon-] .form-control.form-control-xl ~ .form-control-icon i {
+    font-size: 1.6rem;
+}
+.form-group[class*=has-icon-] .form-control.form-control-xl ~ .form-control-icon i:before {
+    color: #a6a8aa;
+}
+.form-group[class*=has-icon-] .form-control-icon i,
+.form-group[class*=has-icon-] .form-control-icon svg {
+    width: 1.2rem;
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+.form-group[class*=has-icon-] .form-control-icon i:before,
+.form-group[class*=has-icon-] .form-control-icon svg:before {
+    vertical-align: sub;
+}
+.form-control.form-control-xl {
+    padding: .85rem 1rem;
+    font-size: 1.2rem;
+}
+
+// Form check color variants
+.form-check .form-check-input[class*=bg-] {
+    border: 0;
+}
+.form-check .form-check-input.form-check-danger.form-check-glow:not(:checked),
+.form-check .form-check-input.form-check-dark.form-check-glow:not(:checked),
+.form-check .form-check-input.form-check-info.form-check-glow:not(:checked),
+.form-check .form-check-input.form-check-light.form-check-glow:not(:checked),
+.form-check .form-check-input.form-check-primary.form-check-glow:not(:checked),
+.form-check .form-check-input.form-check-secondary.form-check-glow:not(:checked),
+.form-check .form-check-input.form-check-success.form-check-glow:not(:checked),
+.form-check .form-check-input.form-check-warning.form-check-glow:not(:checked),
+.form-check .form-check-input:focus {
+    box-shadow: none;
+}
+.form-check .form-check-input.form-check-primary,
+.form-check.form-check-primary .form-check-input {
+    background-color: #435ebe;
+    border-color: #435ebe;
+}
+.form-check .form-check-input.form-check-danger:not(:checked),
+.form-check .form-check-input.form-check-dark:not(:checked),
+.form-check .form-check-input.form-check-info:not(:checked),
+.form-check .form-check-input.form-check-light:not(:checked),
+.form-check .form-check-input.form-check-primary:not(:checked),
+.form-check .form-check-input.form-check-secondary:not(:checked),
+.form-check .form-check-input.form-check-success:not(:checked),
+.form-check .form-check-input.form-check-warning:not(:checked) {
+    background-color: transparent;
+    border: 1px solid #ced4da;
+}
+.form-check .form-check-input.form-check-primary.form-check-glow {
+    box-shadow: 0 0 5px #697ecb;
+}
+.form-check .form-check-input.form-check-secondary,
+.form-check.form-check-secondary .form-check-input {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.form-check .form-check-input.form-check-secondary.form-check-glow {
+    box-shadow: 0 0 5px #868e96;
+}
+.form-check .form-check-input.form-check-success,
+.form-check.form-check-success .form-check-input {
+    background-color: #198754;
+    border-color: #198754;
+}
+.form-check .form-check-input.form-check-success.form-check-glow {
+    box-shadow: 0 0 5px #21b26f;
+}
+.form-check .form-check-input.form-check-info,
+.form-check.form-check-info .form-check-input {
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+.form-check .form-check-input.form-check-info.form-check-glow {
+    box-shadow: 0 0 5px #3cd5f4;
+}
+.form-check .form-check-input.form-check-warning,
+.form-check.form-check-warning .form-check-input {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.form-check .form-check-input.form-check-warning.form-check-glow {
+    box-shadow: 0 0 5px #ffce3a;
+}
+.form-check .form-check-input.form-check-danger,
+.form-check.form-check-danger .form-check-input {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.form-check .form-check-input.form-check-danger.form-check-glow {
+    box-shadow: 0 0 5px #e4606d;
+}
+.form-check .form-check-input.form-check-light,
+.form-check.form-check-light .form-check-input {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.form-check .form-check-input.form-check-light.form-check-glow {
+    box-shadow: 0 0 5px #fff;
+}
+.form-check .form-check-input.form-check-dark,
+.form-check.form-check-dark .form-check-input {
+    background-color: #212529;
+    border-color: #212529;
+}
+.form-check .form-check-input.form-check-dark.form-check-glow {
+    box-shadow: 0 0 5px #383f45;
+}
+.form-check.form-check-sm .form-check-input {
+    width: .9rem;
+    height: .9rem;
+    margin-top: .3em;
+}
+.form-check.form-check-lg .form-check-input {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: .3em;
+}
+.form-check.form-check-lg label {
+    font-size: 1rem;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+.custom-select i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.custom-select select {
+    padding-right: 30px;
+}
+
+.dataTable-input {
+    min-height: calc(1.5em + .934rem + 2px);
+    padding: .467rem .6rem;
+    font-size: .9025rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555252;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dfe3e7;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.dataTable-input:focus {
+    color: #555252;
+    background-color: #fff;
+    border-color: #5a8dee;
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .1);
+}

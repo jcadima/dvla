@@ -1,0 +1,176 @@
+// Text colors
+.text-gray-300 {
+    color: #dee2e6 !important;
+}
+.text-gray-400 {
+    color: #ced4da !important;
+}
+.text-gray-500 {
+    color: #adb5bd !important;
+}
+.text-gray-600 {
+    color: #6c757d !important;
+}
+
+// Background colors
+.bg-light-primary,
+.btn.btn-light-primary {
+    background-color: #ebf3ff;
+    color: #002152;
+}
+.bg-light-secondary,
+.btn.btn-light-secondary {
+    background-color: #e6eaee;
+    color: #181e24;
+}
+.bg-light-success,
+.btn.btn-light-success {
+    background-color: #d2ffe8;
+    color: #00391c;
+}
+.bg-light-danger,
+.btn.btn-light-danger {
+    background-color: #ffdede;
+    color: #450000;
+}
+.bg-light-warning,
+.btn.btn-light-warning {
+    background-color: #fffdd8;
+    color: #3f3c00;
+}
+.bg-light-info,
+.btn.btn-light-info {
+    background-color: #e6fdff;
+    color: #00474d;
+}
+
+// Divider
+.divider {
+    display: block;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+.divider .divider-text {
+    position: relative;
+    display: inline-block;
+    padding: 0 1rem;
+    background-color: #fff;
+}
+.divider .divider-text:after,
+.divider .divider-text:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    border-top: 1px solid #dfe3e7;
+}
+.divider .divider-text:before {
+    right: 100%;
+}
+.divider .divider-text:after {
+    left: 100%;
+}
+.divider.divider-left .divider-text {
+    left: 0;
+    float: left;
+    padding-left: 0;
+}
+.divider.divider-left-center .divider-text {
+    left: -25%;
+}
+.divider.divider-right-center .divider-text {
+    left: 25%;
+}
+.divider.divider-right .divider-text {
+    float: right;
+    padding-right: 0;
+}
+
+// Dropdown
+.dropdown-menu-large {
+    min-width: 16rem;
+}
+.dropdown-menu {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .03);
+}
+.dropdown-item {
+    transition: .5s;
+}
+
+// Bootstrap Icons
+.bi {
+    width: 1rem;
+    height: 1rem;
+}
+.bi.bi-middle:before,
+.icon-mid:before {
+    vertical-align: middle;
+}
+.bi.bi-sub:before,
+.form-group[class*=has-icon-] .form-control-icon i:before,
+.form-group[class*=has-icon-] .form-control-icon svg:before {
+    vertical-align: sub;
+}
+
+// Spacing utilities
+.mt-10,
+.my-10 {
+    margin-top: 3rem;
+}
+.mb-10,
+.my-10 {
+    margin-bottom: 3rem;
+}
+.mb-24,
+.my-24 {
+    margin-bottom: 6rem;
+}
+.my-24 {
+    margin-top: 6rem;
+}
+
+// Typography utilities
+.text-sm {
+    font-size: .875rem;
+}
+.text-xl {
+    font-size: 1.25rem;
+}
+.text-4xl {
+    font-size: 2.25rem;
+}
+.text-6xl {
+    font-size: 4rem;
+}
+.text-black {
+    color: #000;
+}
+.text-width-md {
+    max-width: 450px;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.font-extrabold {
+    font-weight: 800;
+}
+
+// Background
+.bg-customlight {
+    background: rgba(0, 0, 0, 0.53);
+}
+.bg-gradient-ltr {
+    background: linear-gradient(90deg, #095cde, #53c3f3);
+}
+
+// Misc
+.opacity-50 {
+    opacity: 1%;
+}
+.py-4-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.btn-xl {
+    padding: 1rem 2rem;
+}
