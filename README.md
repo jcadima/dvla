@@ -71,8 +71,8 @@ http://localhost:8084
 
 | Step | Vulnerability                                  | Severity | Blog Post              |
 |------|-------------------------------------------------|----------|------------------------|
-| 0    | Lab setup and Docker overview                  |          | [Post 0](https://jcadima.dev/blog/getting-started-docker-laravel-security-lab)         |
-| 1    | Mass assignment, instant admin                 | High     | Coming Week 1          |
+| 0    | Lab setup and Docker overview                  |          | [Setup](https://jcadima.dev/blog/getting-started-docker-laravel-security-lab)         |
+| 1    | Mass assignment, instant admin                 | High     | [Post #1](https://jcadima.dev/blog/laravel-mass-assignment-vulnerability-eloquent)          |
 | 2    | nginx misconfiguration, .env leak -> APP_KEY RCE | Critical | Coming Week 2          |
 | 3    | PHP type juggling, auth bypass                 | Critical | Coming Week 3          |
 | 4    | IDOR on contributor routes                     | High     | Coming Week 4          |
