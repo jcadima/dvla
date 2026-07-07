@@ -41,7 +41,7 @@ class PostSeeder extends Seeder
             'user_id' => $admin->id,
             'title' => 'CONFIDENTIAL: Executive Compensation Review',
             'slug' => 'confidential-executive-compensation-review',
-            'meta_description' => 'Internal draft — do not distribute.',
+            'meta_description' => 'Internal draft, do not distribute.',
             'post_content' => '<p>Internal draft covering executive compensation adjustments for the next fiscal year. This has not been approved for release.</p>',
             'is_sticky' => false,
             'container_type' => 'container',

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->mediumText('meta_description')->nullable();
             $table->text('page_content')->nullable();
             $table->enum('container_type', ['container', 'container-fluid', 'narrow'])->default('container');
-            $table->enum('status', ['draft', 'published'])->default('draft');
+            $table->enum('status', ['draft', 'published'])->default('published');
             $table->timestamps();
         });
     }

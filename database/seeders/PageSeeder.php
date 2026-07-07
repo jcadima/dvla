@@ -39,7 +39,7 @@ class PageSeeder extends Seeder
             ['slug' => 'contact'],
             [
                 'title' => 'Contact Us',
-                'meta_description' => 'Get in touch with the ArtisanBreach team — questions, account help, or something that looks off.',
+                'meta_description' => 'Get in touch with the ArtisanBreach team, questions, account help, or something that looks off.',
                 'page_content' => '<p>Have a question about ArtisanBreach, need a hand with your account, '
                     .'or found something that looks off? Send us a message below and our team will get '
                     .'back to you as soon as possible.</p>',
