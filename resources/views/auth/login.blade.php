@@ -13,8 +13,15 @@
 
         {{-- Warning badge --}}
         <div class="dvla-login-badge">
-            <i class="fa-solid fa-triangle-exclamation me-1"></i> Authorized Lab Access Only
+            <i class="fa-solid fa-key"></i> Default Credentials
         </div>
+        <div class="">
+            Email: admin@artisanbreach.com
+        </div>
+        <div class="">
+            Password: artisanpass123
+        </div>
+
 
         <h1 class="dvla-login-title">Sign In</h1>
         <p class="dvla-login-sub">Access the vulnerable lab environment.</p>

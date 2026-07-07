@@ -65,6 +65,15 @@ Use `npm run dev` instead of `npm run build` if you want Vite's dev server with 
 http://localhost:8084
 ```
 
+# Admin login 
+```
+http://localhost:8084/login
+```
+
+| Default Credentials| |
+|----------|---------|
+| Email    | admin@artisanbreach.com |
+| Password    | artisanpass123 |
 ---
 
 ## The Kill Chain
