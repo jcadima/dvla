@@ -11,15 +11,16 @@
             </a>
         </div>
 
-        {{-- Warning badge --}}
         <div class="dvla-login-badge">
             <i class="fa-solid fa-key"></i> Default Credentials
         </div>
-        <div class="">
-            Email: admin@artisanbreach.com
-        </div>
-        <div class="">
-            Password: artisanpass123
+        <div class="bg-warning p-2 mb-2 text-white fw-bold ">
+            <div class="">
+                Email: admin@artisanbreach.com
+            </div>
+            <div class="">
+                Password: artisanpass123
+            </div>
         </div>
 
 
