@@ -72,6 +72,47 @@ body.dvla-frontend {
     }
 }
 
+
+.dvla-starthere {
+    background: #0d1117;
+    border: 1px solid rgba(231, 76, 60, 0.4);
+    border-radius: 8px;
+    padding: 22px 26px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+    transition: border-color 0.15s, transform 0.15s;
+    margin-bottom: 32px;
+}
+
+.dvla-starthere:hover {
+    border-color: #e74c3c;
+    transform: translateY(-2px);
+}
+
+.dvla-starthere-icon {
+    font-size: 1.6rem;
+    color: #e74c3c;
+    flex-shrink: 0;
+}
+
+.dvla-starthere h5 {
+    color: #e6edf3;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.dvla-starthere p {
+    color: #8b949e;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+
 // ---------- Hero ----------
 .dvla-hero {
     background: linear-gradient(135deg, #0d1117 0%, #161b22 60%, #0d1117 100%);

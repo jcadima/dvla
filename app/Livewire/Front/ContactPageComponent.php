@@ -7,6 +7,7 @@ use App\Models\Contact;
 use App\Models\Page;
 use App\Models\Setting;
 use App\Models\Social;
+use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 
 class ContactPageComponent extends Component
@@ -38,6 +39,10 @@ class ContactPageComponent extends Component
     public function mount()
     {
         $page = Page::with('file')->where('slug', 'contact')->first();
+
+        if (! $page || ($page->status !== 'published' && ! Gate::allows('isAdmin'))) {
+            abort(404);
+        }
 
         $this->page_id = $page->id;
         $this->title = $page->title;

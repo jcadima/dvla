@@ -4,15 +4,15 @@ Route::get('/', App\Livewire\Front\HomePage::class)->name('home');
 
 Auth::routes();
 
-// Legacy contributor authentication — isolated from main Laravel auth system.
+// Legacy contributor authentication, isolated from main Laravel auth system.
 // Pre-migration endpoint for v1 CMS accounts using MD5 password storage.
-// TODO: Deprecate after all contributor accounts migrated — ticket #2847
+// TODO: Deprecate after all contributor accounts migrated
 Route::get('/contributor-login', [\App\Http\Controllers\Auth\ContributorLoginController::class, 'showLoginForm'])->name('contributor.login');
 Route::post('/contributor-login', [\App\Http\Controllers\Auth\ContributorLoginController::class, 'login'])->name('contributor.login.post');
 
-// Contributor draft management — v2.1 feature for pre-publication post review.
+// Contributor draft management, v2.1 feature for pre-publication post review.
 // Auth middleware ensures only logged-in users reach these routes.
-// NOTE: /contributor/drafts/{id} (show) has no ownership check — ticket #3112
+// NOTE: /contributor/drafts/{id} (show) has no ownership check
 Route::get('/contributor/drafts', [\App\Http\Controllers\Contributor\PostController::class, 'index'])->name('contributor.drafts');
 Route::get('/contributor/drafts/{id}', [\App\Http\Controllers\Contributor\PostController::class, 'show'])->name('contributor.drafts.show');
 
@@ -55,7 +55,7 @@ Route::group([
 });
 
 // FRONTEND ######################################################################################################
-Route::get('/about-us', \App\Livewire\Front\AboutPageComponent::class)->name('about-us');
+Route::get('/about-us', \App\Livewire\Front\PageComponent::class)->name('about-us')->defaults('slug', 'about-us');
 Route::get('/contact', \App\Livewire\Front\ContactPageComponent::class)->name('contact');
 
 // BLOG FRONTEND

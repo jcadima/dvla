@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\Social;
 use App\Models\Setting;
 use App\Models\Page;
+use Illuminate\Support\Facades\Gate;
 
 class PageComponent extends Component
 {
@@ -15,15 +16,21 @@ class PageComponent extends Component
     public $page_file;
 
 
+
     public function mount($slug)
     {
         $page = Page::with('file')->where('slug', $slug)->first();
+
+        if (! $page || ($page->status !== 'published' && ! Gate::allows('isAdmin'))) {
+            abort(404);
+        }
 
         $this->title = $page->title;
         $this->meta_description = $page->meta_description;
         $this->page_content = $page->page_content;
         $this->page_file = optional($page->file->first())->filename;
     }
+
 
 
     public function render()

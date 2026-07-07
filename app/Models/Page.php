@@ -13,12 +13,10 @@ class Page extends Model
         'title',
         'slug',
         'meta_description',
-        'page_content'
+        'page_content',
+        'container_type',
+        'status',
     ];
-
-    // public function domain() {
-    //     return $this->belongsTo(Domain::class);
-    // }
 
     public function file()
     {

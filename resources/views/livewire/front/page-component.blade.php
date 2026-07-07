@@ -8,7 +8,11 @@
     </x-slot>
 
 
-    <div>{!! $page_content !!}</div>
+    <section class="page-content">
+        <div class="container">
+            {!! $page_content !!}
+        </div>
+    </section>
 
 
 </div>

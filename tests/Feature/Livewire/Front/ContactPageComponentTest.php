@@ -14,6 +14,7 @@ beforeEach(function () {
         'slug' => 'contact',
         'meta_description' => 'Meta Description for Contact us page',
         'page_content' => '',
+        'status' => 'published',
     ]);
 
     Setting::create(['recipient' => 'email@artisanbreach.com']);
@@ -21,6 +22,21 @@ beforeEach(function () {
 
 it('renders the contact page at /contact', function () {
     $this->get('/contact')->assertStatus(200)->assertSee('Contact Us');
+});
+
+it('returns 404 for the contact page to guests when it is a draft', function () {
+    $this->page->update(['status' => 'draft']);
+
+    $this->get('/contact')->assertStatus(404);
+});
+
+it('shows the draft contact page to a logged-in admin', function () {
+    $this->page->update(['status' => 'draft']);
+
+    $adminRole = \App\Models\Role::create(['name' => 'Administrator']);
+    $admin = \App\Models\User::factory()->create(['role_id' => $adminRole->id]);
+
+    $this->actingAs($admin)->get('/contact')->assertStatus(200)->assertSee('Contact Us');
 });
 
 it('validates required fields before submitting', function () {
