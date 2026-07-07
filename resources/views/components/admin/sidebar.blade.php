@@ -60,6 +60,7 @@
                 </li>
 
                 <!--  BLOG -->
+                {{--
                 <li class="sidebar-item has-sub">
                     <a href="#" class='sidebar-link'>
                         <i class="fa-brands fa-microblog"></i>
@@ -88,6 +89,7 @@
                         </li>
                     </ul>
                 </li>
+                --}}
 
 
                 <!-- USERS -->
