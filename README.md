@@ -82,7 +82,7 @@ http://localhost:8084/login
 |------|-------------------------------------------------|----------|------------------------|
 | 0    | Lab setup and Docker overview                  |          | [Setup](https://jcadima.dev/blog/getting-started-docker-laravel-security-lab)         |
 | 1    | Mass assignment, instant admin                 | High     | [Post #1](https://jcadima.dev/blog/laravel-mass-assignment-vulnerability-eloquent)          |
-| 2    | nginx misconfiguration, .env leak -> APP_KEY RCE | Critical | Coming Week 2          |
+| 2    | nginx misconfiguration, .env leak -> APP_KEY RCE | Critical | [Post #2](https://jcadima.dev/blog/nginx-env-file-exposure-laravel-app-key-rce)          |
 | 3    | PHP type juggling, auth bypass                 | Critical | Coming Week 3          |
 | 4    | IDOR on contributor routes                     | High     | Coming Week 4          |
 | 5    | File Upload Bypass                             | High     | Coming Week 5          |
