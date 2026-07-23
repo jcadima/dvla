@@ -83,13 +83,18 @@ http://localhost:8084/login
 | 0    | Lab setup and Docker overview                  |          | [Setup](https://jcadima.dev/blog/getting-started-docker-laravel-security-lab)         |
 | 1    | Mass assignment, instant admin                 | High     | [Post #1](https://jcadima.dev/blog/laravel-mass-assignment-vulnerability-eloquent)          |
 | 2    | nginx misconfiguration, .env leak -> APP_KEY RCE | Critical | [Post #2](https://jcadima.dev/blog/nginx-env-file-exposure-laravel-app-key-rce)          |
-| 3    | PHP type juggling, auth bypass                 | Critical | [Post #3](https://jcadima.dev/blog/php-type-juggling-authentication-bypass)          |
-| 4    | IDOR on contributor routes                     | High     | Coming Week 4          |
-| 5    | File Upload Bypass                             | High     | Coming Week 5          |
-| 6    | Stored XSS via Blade bypass                    | High     | Coming Week 6          |
-| 7    | Redis job injection via Horizon                | Critical | Coming Week 7          |
-| 8    | docker.sock escape, host compromise            | Critical | Coming Week 8          |
-| 9    | Full Kill Chain                                | Critical | Coming Week 9          |
+| 3    | PHP type juggling, auth bypass                 | High | [Post #3](https://jcadima.dev/blog/php-type-juggling-authentication-bypass)          |
+| 4    | SQL Injection                     | Critical     | Coming Soon          |
+| 5    | IDOR on contributor routes                     | High     | Coming Soon          |
+| 6    | File Upload Bypass                             | High     | Coming Soon          |
+| 7    | Stored XSS via Blade bypass                    | High     | Coming Soon          |
+| 8    | Open Redirect                    | Medium     | Coming Soon          |
+| 9    | SSRF                    | High     | Coming Soon          |
+| 10    | Redis job injection via Horizon                | Critical | Coming Soon          |
+| 11    | docker.sock escape, host compromise            | Critical | Coming Soon          |
+| 12    | SSTI            | Critical | Coming Soon          |
+| 13    | Race Condition            | High | Coming Soon          |
+| 14    | Full Kill Chain                                | Critical | Coming Soon          |
 --- 
 
 ## Stack
