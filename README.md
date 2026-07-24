@@ -81,10 +81,10 @@ http://localhost:8084/login
 | Step | Vulnerability                                  | Severity | Blog Post              |
 |------|-------------------------------------------------|----------|------------------------|
 | 0    | Lab setup and Docker overview                  |          | [Setup](https://jcadima.dev/blog/getting-started-docker-laravel-security-lab)         |
-| 1    | Mass assignment, instant admin                 | High     | [Post #1](https://jcadima.dev/blog/laravel-mass-assignment-vulnerability-eloquent)          |
-| 2    | nginx misconfiguration, .env leak -> APP_KEY RCE | Critical | [Post #2](https://jcadima.dev/blog/nginx-env-file-exposure-laravel-app-key-rce)          |
+| 1    | Mass assignment, instant admin                 | High     | [Post #1](https://jcadima.dev/blog/laravel-mass-assignment-vulnerability-eloquent)    |
+| 2    | nginx misconfiguration, .env leak -> APP_KEY RCE | Critical | [Post #2](https://jcadima.dev/blog/nginx-env-file-exposure-laravel-app-key-rce)     |
 | 3    | PHP type juggling, auth bypass                 | High | [Post #3](https://jcadima.dev/blog/php-type-juggling-authentication-bypass)          |
-| 4    | SQL Injection                     | Critical     | Coming Soon          |
+| 4    | SQL Injection                     | Critical     | [Post #4](https://jcadima.dev/blog/orm-didnt-save-you-sql-injection-raw-query-builder-methods-laravel-12)          |
 | 5    | IDOR on contributor routes                     | High     | Coming Soon          |
 | 6    | File Upload Bypass                             | High     | Coming Soon          |
 | 7    | Stored XSS via Blade bypass                    | High     | Coming Soon          |
