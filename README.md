@@ -85,7 +85,7 @@ http://localhost:8084/login
 | 2    | nginx misconfiguration, .env leak -> APP_KEY RCE | Critical | [Post #2](https://jcadima.dev/blog/nginx-env-file-exposure-laravel-app-key-rce)     |
 | 3    | PHP type juggling, auth bypass                 | High | [Post #3](https://jcadima.dev/blog/php-type-juggling-authentication-bypass)          |
 | 4    | SQL Injection                     | Critical     | [Post #4](https://jcadima.dev/blog/orm-didnt-save-you-sql-injection-raw-query-builder-methods-laravel-12)          |
-| 5    | IDOR on contributor routes                     | High     | Coming Soon          |
+| 5    | IDOR on contributor routes                     | High     | [Post #5](https://jcadima.dev/blog/laravel-idor-insecure-direct-object-reference)          |
 | 6    | File Upload Bypass                             | High     | Coming Soon          |
 | 7    | Stored XSS via Blade bypass                    | High     | Coming Soon          |
 | 8    | Open Redirect                    | Medium     | Coming Soon          |
