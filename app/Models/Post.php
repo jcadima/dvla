@@ -16,6 +16,10 @@ class Post extends Model
         'meta_description',
         'post_content',
         'is_sticky',
+        'container_type',
+        'status',
+        'created_at',
+        'updated_at',
     ];
 
     public function categories()
