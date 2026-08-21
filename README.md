@@ -88,7 +88,7 @@ http://localhost:8084/login
 | 5    | IDOR on contributor routes                     | High     | [Post #5](https://jcadima.dev/blog/laravel-idor-insecure-direct-object-reference)          |
 | 6    | File Upload Bypass                             | High     | [Post #6](https://jcadima.dev/blog/livewire-file-upload-mime-bypass-rce)            |
 | 7    | Stored XSS via Blade bypass                    | High     |  [Post #7](https://jcadima.dev/blog/stored-xss-laravel-contact-form-admin-session-hijack)      |
-| 8    | Open Redirect                    | Medium     | Coming Soon          |
+| 8    | Open Redirect                    | Medium     | [Post #8](https://jcadima.dev/blog/laravel-open-redirect-token-theft          |
 | 9    | SSRF                    | High     | Coming Soon          |
 | 10    | Redis job injection via Horizon                | Critical | Coming Soon          |
 | 11    | docker.sock escape, host compromise            | Critical | Coming Soon          |
