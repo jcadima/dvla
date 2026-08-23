@@ -135,7 +135,7 @@ class HomePageSeeder extends Seeder
     <section class="dvla-section dvla-modules">
         <div class="container">
             <h2 class="dvla-section-title text-center">Vulnerability Modules</h2>
-            <p class="dvla-section-sub text-center">Eight intentional misconfigurations across the full stack. Explore each one in your own local instance, then check the companion blog series below for the full walkthrough.</p>
+            <p class="dvla-section-sub text-center">13 intentional misconfigurations across the full stack. Explore each one in your own local instance, then check the companion blog series below for the full walkthrough.</p>
 
             <!-- Easy -->
             <div class="dvla-tier-header dvla-tier-easy">
@@ -238,54 +238,81 @@ class HomePageSeeder extends Seeder
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a href="#" class="dvla-blog-card">
+                    <a target="_blank" href="https://jcadima.dev/blog/nginx-env-file-exposure-laravel-app-key-rce" class="dvla-blog-card">
                         <span class="dvla-blog-num">2</span>
                         <div>
                             <p>Nginx misconfiguration to RCE: the .env leak and the APP_KEY deserialization chain</p>
-                            <span class="dvla-read-more">Coming Soon <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            <span class="dvla-read-more text-danger">Read Post <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </a>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <a href="#" class="dvla-blog-card">
+                    <a target="_blank" href="https://jcadima.dev/blog/php-type-juggling-authentication-bypass" class="dvla-blog-card">
                         <span class="dvla-blog-num">3</span>
                         <div>
                             <p>Type juggling in PHP: bypassing authentication with == vs ===</p>
-                            <span class="dvla-read-more">Coming Soon <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            <span class="dvla-read-more text-danger">Read Post <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a href="#" class="dvla-blog-card">
+                    <a target="_blank" href="https://jcadima.dev/blog/orm-didnt-save-you-sql-injection-raw-query-builder-methods-laravel-12" class="dvla-blog-card">
                         <span class="dvla-blog-num">4</span>
                         <div>
-                            <p>IDOR on Laravel API routes: when route model binding is not enough</p>
-                            <span class="dvla-read-more">Coming Soon <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            <p>SQL Injection: Data leak</p>
+                            <span class="dvla-read-more text-danger">Read Post <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a href="#" class="dvla-blog-card">
+                    <a target="_blank" href="https://jcadima.dev/blog/laravel-idor-insecure-direct-object-reference" class="dvla-blog-card">
                         <span class="dvla-blog-num">5</span>
                         <div>
+                            <p>IDOR on Laravel API routes: when route model binding is not enough</p>
+                            <span class="dvla-read-more text-danger">Read Post <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a target="_blank" href="https://jcadima.dev/blog/livewire-file-upload-mime-bypass-rce" class="dvla-blog-card">
+                        <span class="dvla-blog-num">6</span>
+                        <div>
                             <p>Livewire file upload bypass: MIME trust and the path to RCE</p>
-                            <span class="dvla-read-more">Coming Soon <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            <span class="dvla-read-more text-danger">Read Post <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a target="_blank" href="https://jcadima.dev/blog/stored-xss-laravel-contact-form-admin-session-hijack" class="dvla-blog-card">
+                        <span class="dvla-blog-num">7</span>
+                        <div>
+                            <p>Stored XSS via the admin panel: when {!! !!} trusts unsanitized input</p>
+                            <span class="dvla-read-more text-danger">Read Post <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a target="_blank" href="https://jcadima.dev/blog/laravel-open-redirect-token-theft" class="dvla-blog-card">
+                        <span class="dvla-blog-num">8</span>
+                        <div>
+                            <p>Open Redirect: Token theft</p>
+                            <span class="dvla-read-more text-danger">Read Post <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a href="#" class="dvla-blog-card">
-                        <span class="dvla-blog-num">6</span>
+                        <span class="dvla-blog-num">9</span>
                         <div>
-                            <p>Stored XSS via the admin panel: when {!! !!} trusts unsanitized input</p>
+                            <p>SSRF: Server-Side Request Forgery.Trick a server into making unauthorized requests to unintended locations</p>
                             <span class="dvla-read-more">Coming Soon <i class="fa-solid fa-arrow-right ms-1"></i></span>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <a href="05-redis-injection/blog_post_redis_injection.html" class="dvla-blog-card">
-                        <span class="dvla-blog-num">7</span>
+                    <a href="" class="dvla-blog-card">
+                        <span class="dvla-blog-num">10</span>
                         <div>
                             <p>Redis with no authentication: how your queue worker becomes a backdoor</p>
                             <span class="dvla-read-more">Read post <i class="fa-solid fa-arrow-right ms-1"></i></span>
@@ -294,7 +321,7 @@ class HomePageSeeder extends Seeder
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a href="#" class="dvla-blog-card">
-                        <span class="dvla-blog-num">8</span>
+                        <span class="dvla-blog-num">11</span>
                         <div>
                             <p>Docker misconfigurations: turning container RCE into host compromise</p>
                             <span class="dvla-read-more">Coming Soon <i class="fa-solid fa-arrow-right ms-1"></i></span>
@@ -303,7 +330,25 @@ class HomePageSeeder extends Seeder
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <a href="#" class="dvla-blog-card">
-                        <span class="dvla-blog-num">9</span>
+                        <span class="dvla-blog-num">12</span>
+                        <div>
+                            <p>SSTI: Server-Side Template Injection</p>
+                            <span class="dvla-read-more">Coming Soon <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="dvla-blog-card">
+                        <span class="dvla-blog-num">13</span>
+                        <div>
+                            <p>Race Condition: System processes or threads access shared resources simultaneously without proper synchronization</p>
+                            <span class="dvla-read-more">Coming Soon <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="dvla-blog-card">
+                        <span class="dvla-blog-num">14</span>
                         <div>
                             <p>Chaining all of it: a full kill chain against a Laravel application</p>
                             <span class="dvla-read-more">Coming Soon <i class="fa-solid fa-arrow-right ms-1"></i></span>
@@ -311,6 +356,8 @@ class HomePageSeeder extends Seeder
                     </a>
                 </div>
             </div>
+
+            
         </div>
     </section>
 
