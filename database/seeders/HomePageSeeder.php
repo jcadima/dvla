@@ -57,7 +57,7 @@ class HomePageSeeder extends Seeder
                             <i class="fa-solid fa-layer-group"></i>
                         </div>
                         <h5>Modern Stack</h5>
-                        <p>PHP 8.2, Laravel 12, Livewire 3, Docker Compose, Redis &amp; Horizon. The same stack running in production today, not CGI-era PHP.</p>
+                        <p>PHP 8.3, Laravel 12, Livewire 3, Docker Compose, Redis &amp; Horizon. The same stack running in production today, not CGI-era PHP.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
