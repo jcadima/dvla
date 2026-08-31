@@ -90,7 +90,7 @@ http://localhost:8084/login
 | 7    | Stored XSS via Blade bypass                    | High     |  [Post #7](https://jcadima.dev/blog/stored-xss-laravel-contact-form-admin-session-hijack)      |
 | 8    | Open Redirect                    | Medium     | [Post #8](https://jcadima.dev/blog/laravel-open-redirect-token-theft)          |
 | 9    | SSRF                    | High     | [Post #9](https://jcadima.dev/blog/laravel-ssrf-server-side-request-forgery-internal-network)           |
-| 10    | Redis job injection via Horizon                | Critical | Coming Soon          |
+| 10    | Redis job injection via Horizon                | Critical | [Post #10](https://jcadima.dev/blog/unauthenticated-redis-laravel-horizon-queue-injection)          |
 | 11    | docker.sock escape, host compromise            | Critical | Coming Soon          |
 | 12    | SSTI            | Critical | Coming Soon          |
 | 13    | Race Condition            | High | Coming Soon          |
