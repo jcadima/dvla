@@ -3,7 +3,7 @@
 </p>
 
 # Damn Vulnerable Laravel Application (DVLA)
-### A Deliberately Vulnerable Laravel 12 Application
+### A Deliberately Vulnerable Laravel 12 Application (Artisan Breach)
 
 A modern, fully Dockerized lab environment for learning real-world 
 Laravel security vulnerabilities. 
