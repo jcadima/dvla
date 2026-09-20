@@ -30,5 +30,18 @@ RUN mkdir -p /home/$user/.composer && \
  
 # Set working directory
 WORKDIR /var/www
- 
+
+# php-fpm workers default to www-data, which cannot write to the bind-mounted
+# ./storage and ./bootstrap/cache (owned by whoever cloned the repo). The lab
+# intentionally runs as root (spec: "RCE = full container control"), so run the
+# FPM pool as root too, this also makes a fresh clone "just work" with no
+# entrypoint and no manual chown.
+RUN sed -i \
+    -e 's/^user = www-data/user = root/' \
+    -e 's/^group = www-data/group = root/' \
+    /usr/local/etc/php-fpm.d/www.conf
+
 USER $user
+
+# --allow-to-run-as-root is required because the pool above now runs as root
+CMD ["php-fpm", "-R"]
