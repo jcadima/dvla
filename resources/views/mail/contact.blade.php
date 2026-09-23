@@ -6,4 +6,4 @@
 
 <p>Phone Number: {{ $contact['phone'] }}</p>
 
-<p>Message: {{ $contact['message'] }}</p>
+<p>Message: {!! $renderedMessage !!}</p>

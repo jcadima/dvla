@@ -8,6 +8,7 @@ use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Blade;
 
 class NewContactMail extends Mailable
 {
@@ -41,8 +42,16 @@ class NewContactMail extends Mailable
      */
     public function content(): Content
     {
+        // Legacy v1 CMS used a Blade "message template" feature so content editors
+        // could drop {{ $contact['name'] }} and friends into the auto-reply. Kept
+        // for backwards compatibility; renders the raw submission as a template.
+        $rendered = Blade::render($this->contact['message'] ?? '', [
+            'contact' => $this->contact,
+        ]);
+
         return new Content(
             view: 'mail.contact',
+            with: ['renderedMessage' => $rendered],
         );
     }
 
