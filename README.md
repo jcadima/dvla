@@ -93,7 +93,7 @@ http://localhost:8084/login
 | 10    | Redis job injection via Horizon                | Critical | [Post #10](https://jcadima.dev/blog/unauthenticated-redis-laravel-horizon-queue-injection)          |
 | 11    | docker.sock escape, host compromise            | Critical | [Post #11](https://jcadima.dev/blog/docker-sock-container-escape-host-compromise)           |
 | 12    | SSTI            | Critical | [Post #12](https://jcadima.dev/blog/laravel-ssti-blade-render-rce)           |
-| 13    | Race Condition            | High | Coming Soon          |
+| 13    | Race Condition            | High | [Post #13](https://jcadima.dev/blog/laravel-race-condition-login-lockout-bypass)          |
 | 14    | Full Kill Chain                                | Critical | Coming Soon          |
 --- 
 
